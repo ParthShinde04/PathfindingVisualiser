@@ -32,40 +32,40 @@ class Square:
     return self.row, self.col
 
   def is_closed(self):
-		return self.color == RED
+    return self.color == RED
 
-	def is_open(self):
-		return self.color == GREEN
+  def is_open(self):
+    return self.color == GREEN
 
-	def is_barrier(self):
-		return self.color == BLACK
+  def is_barrier(self):
+    return self.color == BLACK
 
-	def is_start(self):
-		return self.color == ORANGE
+  def is_start(self):
+    return self.color == ORANGE
 
-	def is_end(self):
-		return self.color == TURQUOISE
+  def is_end(self):
+    return self.color == TURQUOISE
 
-	def reset(self):
-		self.color = WHITE
+  def reset(self):
+    self.color = WHITE
 
-	def make_start(self):
-		self.color = ORANGE
+  def make_start(self):
+    self.color = ORANGE
 
-	def make_closed(self):
-		self.color = RED
+  def make_closed(self):
+    self.color = RED
 
-	def make_open(self):
-		self.color = GREEN
+  def make_open(self):
+    self.color = GREEN
 
-	def make_barrier(self):
-		self.color = BLACK
+  def make_barrier(self):
+    self.color = BLACK
 
-	def make_end(self):
-		self.color = TURQUOISE
+  def make_end(self):
+    self.color = TURQUOISE
 
-	def make_path(self):
-		self.color = PURPLE
+  def make_path(self):
+    self.color = PURPLE
 
   def draw(self, win):
     pygame.draw.rect(win, self.colour, (self.x, self.width, self.width))
